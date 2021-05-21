@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index_styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h4>The Nav</h4>
+            </div>
+            <ul class="navlinks">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Projects</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+            <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+            </div>    
+        </nav>
+
+
+        <section>
+            <div class="main">
+                <div class="bio">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, minima?</div>
+                <div class="animate">
+                    <h2><span class="text-ani"></span></h2>
+                </div>
+                <img src="Background.jpg" alt="" srcset="">
+            </div>
+        </section>
+    </header>
+    <div class="slider"></div>
+
+    <script src="typed.js"></script>
+    <script>
+        var typed = new Typed('.text-ani', {
+            strings:[
+                'Hello there...',
+                'Welcome to my website',
+                'I am Vangmay Sachan',
+            ],
+            typeSpeed:50,
+            backSpeed:50,
+            showCursor:true,
+            autoInsertCss:true
+        });
+</script>
+<script src="app.js"></script>
+</body>
+</html>
