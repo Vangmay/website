@@ -1,3 +1,6 @@
+body{
+    background: black;
+}
 *{
     padding: 0px;
     margin: 0px;
@@ -66,20 +69,26 @@ nav{
     left: 5%;
 }
 .animate h2 span{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family:'Work Sans',sans-serif;
+    font-weight: 300;
 }
 .bio{
+    font-family:'Work Sans',sans-serif;
+    font-weight: 300;
     position: absolute;
     width: 250px;
     top: 45%;
     left:5%;
 }
 .main{
-    width: 100%;
+    width: 80%;
     height: 60%;
     position: absolute;
     top:25%;
-
+}
+.main:hover{
+    border-radius:10px ;
 }
 .main img{
     height: 100%;
@@ -96,8 +105,8 @@ nav{
     z-index: -1;
 }
 @media screen and (max-width:768px) {
-    *{
-        overflow: hidden;
+    body{
+       overflow: hidden; 
     }
     nav{
         background: rgba(54, 53, 53, 0.589);
@@ -124,5 +133,9 @@ nav{
     }
     .contactbtn{
         background: rgba(165, 42, 42, 0);
+    }
+    .animate h2 span{
+        color: rgb(255, 255, 255);
+        font-weight: 300;
     }
 }
