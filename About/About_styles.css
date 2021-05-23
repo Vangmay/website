@@ -1,5 +1,5 @@
 body{
-    background: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
 }
 *{
     padding: 0px;
@@ -59,47 +59,30 @@ nav{
     background-position: right;
 }
 /*Nav styling ends_______*/
-
-
-.text-ani{
-    display: inline ;
-    font-family:'Work Sans',sans-serif  ;
-    font-size: 23px;
-}
-.animate{
+.card{
     position: absolute;
-    width: 300px;
-    top: 39%;
-    left: 5%;
+    width: 60%;
+    height: 50%;
+    left: 18.5%;
+    top: 25%;
+    background-color: rgba(68, 78, 78, 0.336);
+    border-radius: 25px;
+    z-index: -1;
 }
-.animate h2 span{
-    color: rgb(255, 255, 255);
-    font-family:'Work Sans',sans-serif;
+.card-details li{
+    z-index: -3;
+    text-decoration: none;
+    list-style: none;
+}
+.card-details{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    font-family: 'Work Sans',sans-serif;
     font-weight: 300;
+    margin-top: 90px;
 }
-.bio{
-    font-family:'Work Sans',sans-serif;
-    font-weight: 300;
-    position: absolute;
-    width: 250px;
-    top: 45%;
-    left:5%;
-    font-size: 19px;
-}
-.main{
-    width: 80%;
-    height: 60%;
-    position: absolute;
-    top:25%;
-}
-.main:hover{
-    border-radius:10px ;
-}
-.main img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
+
 .slider{
     position: absolute;
     top: 0%;
@@ -109,6 +92,65 @@ nav{
     width: 100%;
     z-index: -2;
 }
+.skills{
+    display: flex;
+    position: absolute;
+    top: 100vh;
+    height: 60vh;
+    width: 100%;
+    background-color: rgb(0, 255, 170);
+}
+.skill-graph{
+    height: 75%;
+    width: 60%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.currently-works{
+    height: 60vh;
+    width: 70vh;
+    background-color:cadetblue ;
+    margin-right: 10px;
+    text-align: center;
+    font-family: 'Work Sans',sans-serif;
+}
+
+.scipothesis-logo{
+    background:url('scipothesis.jpeg') ;
+    background-size: contain;
+    background-repeat:no-repeat ;
+    height: 25vh;
+    width: 40vh;
+    margin-left: 22.5vh;
+    left: 132.5vh;
+}
+.work-info{
+    height: 250px;
+    width: 40vh;
+    margin-left: 15vh;
+    margin-top: 5vh;
+    color: white;
+    background-color:rgba(255, 0, 0, 0) ;
+    z-index: 100;
+    text-align: center;
+    font-size: 30px;
+}
+.work-info span{
+    background-color:black ;
+}
+.work-info span a{
+    color:white ;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.work-info span a:hover{
+    background-color:yellow ;
+    color: black;
+}
+.work-info p{
+    font-family: 'Work Sans',sans-serif;
+    font-size: 20px;
+}
 
 
 /*Footer styling*/
@@ -117,9 +159,9 @@ nav{
     box-sizing: border-box;
     background-color: rgb(0, 0, 0);
     width: 100%;
-    bottom: -25vh;
-    height:240px ;
-    color: white;
+    top: 160vh;
+    height:250px;
+    color: rgb(255, 255, 255);
 }
 .footer-text{
     position: absolute;
@@ -140,7 +182,7 @@ nav{
 }
 .footer-links li a{
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     transition: all 0.2s ease-in;
 }
 .footer-links li a:hover{
@@ -156,8 +198,11 @@ nav{
 }
 /*Footer styling ends*/
 
-
 @media screen and (max-width:768px) {
+    body{
+        overflow-x: hidden;
+    }
+
     nav{
         background: rgba(54, 53, 53, 0.589);
     }
@@ -184,20 +229,17 @@ nav{
     .contactbtn{
         background: rgba(165, 42, 42, 0);
     }
-    .animate h2 span{
-        color: rgb(255, 255, 255);
-        font-weight: 300;
-    }
-    .main{
-        z-index: -1;
-    }
-    .footer{
-       overflow: hidden;
-       height: 50vh;
+    
+    .footer{ 
+       top: 220vh;
+       height:60vh;
     }
     .footer-info p{
         font-size: 14px;
         text-align:left;
+    }
+    .skills{
+        display: block;
     }
     .footer-info{
         font-family: "Work Sans", sans-serif;
@@ -206,5 +248,30 @@ nav{
         top: 30vh;
         align-content:center;
         width: 30vh;
+    }
+    .skills{
+        display: flex;
+        flex-direction: row;
+    }
+    .card-details{
+        margin-top: 23%;
+        margin-left: 20%;
+    }
+    .skill-graph img{
+        height:40vh;
+        width: 50vh;
+    }
+    .currently-works{
+        width: 85vh;
+        height: 60vh;
+        margin-left: -60%;
+        margin-top: 60vh;
+    }
+    .scipothesis-logo{
+        margin-left: 25%;
+    }
+    .work-info{
+        margin-top:3%;
+        margin-left:15%;
     }
 }
