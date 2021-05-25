@@ -207,11 +207,8 @@ nav{
     .footer-info{
         font-family: "Work Sans", sans-serif;
         position: absolute;
-        left: 10%;
-        top: 30vh;
-        bottom: 10vh;
-        align-content:center;
-        width: 30vh;
-        margin-top: -7%;
+        left: 60%;
+        top: 3vh;
+        align-content: center;
     }
 }
