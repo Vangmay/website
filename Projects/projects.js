@@ -11,6 +11,3 @@ tl.fromTo(navbar,0.8,{opacity:0,x:-30},{opacity:1,x:0,ease:Power2.easeIn})
 burger.addEventListener('click',()=>{
     nav.classList.toggle('nav-active');
 });
-project_card.addEventListener('mouseenter',()=>{
-    project_p.style.opacity = '1';
-});
