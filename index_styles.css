@@ -34,7 +34,8 @@ nav{
     font-family: 'Work Sans', sans-serif;
     font-size: 23px;
     color: #000000;
-    padding: 15px;
+    padding-left: 15px;
+    padding-right:15px ;
     transition: all 0.3s ease;
 }
 .burger{
@@ -52,8 +53,9 @@ nav{
 }
 .contactbtn{
     background-image:linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
-    border-radius: 10px;
+    border-radius: 20px;
     background-size: 200%;
+    padding:15px;
 }
 .contactbtn:hover{
     background-position: right;

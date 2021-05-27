@@ -1,5 +1,6 @@
 body{
-    background: rgb(230, 140, 140);
+    background: rgb(153, 142, 142);
+    overflow-x: hidden;
 }
 *{
     padding: 0px;
@@ -8,7 +9,7 @@ body{
 }
 /*Navbar styling*/
 nav{
-      
+    position: relative;
     display:flex;
     justify-content: space-around;
     align-items: center;
@@ -16,31 +17,40 @@ nav{
     background-color: #ffffff00;
     font-family: 'Work Sans',sans-serif;
     opacity: 1;
+    z-index: 4;
 }
 .navlinks{
     display: flex;
     justify-content: space-around;
     width: 30%;
     transition: all 0.4s ease;
+    z-index: 4;
 }
 .navlinks li a:hover{
     color: rgb(255, 255, 255);
 }
 .navlinks li{
     list-style: none;
+    z-index: 4;
 }
 .navlinks li a{
     text-decoration: none;
     font-family: 'Work Sans', sans-serif;
     font-size: 23px;
     color: #000000;
-    padding: 15px;
+    padding-left:15px;
+    padding-right: 15px;
     transition: all 0.3s ease;
+    z-index: 4;
+}
+.logo{
+    z-index: 4;
 }
 .burger{
     cursor: pointer;
     padding-left: 10px;
     display: none;
+    z-index: 4;
 }
 .burger div{
     width: 25px;
@@ -49,10 +59,12 @@ nav{
     margin: 3px;
     border-radius: 500px;
     opacity: 1;
+    z-index: 4;
 }
 .contactbtn{
-    background-image:linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+    background-image:linear-gradient(to right, rgb(223, 238, 139) 0%, #fbf5c2 51%, #f8df8c 100%);
     border-radius: 10px;
+    padding:15px;
     background-size: 200%;
 }
 .contactbtn:hover{
@@ -64,18 +76,94 @@ nav{
     top: 0%;
     left: 0%;
     background-size:100%;
-    background: rgb(9, 49, 61);
-    height: 100vh;
+    background: rgb(49, 79, 143);
+    background:url('Pyramid.jpg');
+    background-size:cover;
+    background-position:center ;
+    background-repeat:no-repeat ;
+    height: 70vh;
     width: 100%;
-    z-index: -2;
+    z-index:1;
 }
+.post-menu{
+    display: grid;
+    grid-template-columns: 15% 20%;
+    grid-auto-columns: minmax(15%,auto);
+    grid-auto-rows: minmax(15%,auto);
+    gap:30px ;
+    grid-template-rows:20%;
+    z-index: 2;
+    background-color: rgb(21, 31, 65);
+    height: 130vh;
+    width: 100%;
+    margin-top: 18.2%;
+    align-content: flex-end;
+    margin-left: 15%;
+    font-family: 'Inconsolata';
+    color: white;
+
+}
+.menu-bg{
+    position: relative;
+    background-color:rgb(21, 31, 65);
+}
+.card1{
+    grid-column-start: 1;
+    grid-column-end:3;
+
+}
+.card2{
+    grid-row-start: 2;
+    grid-row-end: 5;
+    visibility: hidden;
+}
+.card3{
+    visibility: hidden;
+}
+.card4{
+    grid-row-start: 3;
+    grid-row-end:5 ;
+    visibility: hidden;
+}
+.post-card{
+    background-color: red;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    
+}
+.post-card:hover{
+    transform:scale(1.1);
+    box-shadow: 70px 7px 100px cyan;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    right: 25%;
+    font-family: 'Work Sans',sans-serif;
+}
+
+.post-link{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+.post-span{
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
+}
+
 /*Footer styling*/
 .footer{
-    position: absolute;
+    position:absolute;
     box-sizing: border-box;
     background-color: rgb(0, 0, 0);
     width: 100%;
-    bottom: -25vh;
+    bottom:-100vh;
     height:245px ;
     color: white;
 }
@@ -118,7 +206,8 @@ nav{
         overflow-x: hidden;
     }
     nav{
-        background: rgba(54, 53, 53, 0.589);
+        z-index: 4;
+        background: rgba(54, 53, 53, 0.589);   
     }
     .navlinks{
         position: absolute;
@@ -133,6 +222,7 @@ nav{
         align-items: center;
         transform: translateX(100%);
         transition: all 0.4s ease;
+        z-index: 4;
     }
     .burger{
         display: block;
@@ -153,5 +243,23 @@ nav{
         left: 60%;
         top: 3vh;
         align-content: center;
+    }
+    .post-menu{
+        grid-template-columns: 50% 20%;
+        grid-template-rows:15% 15% 15% ;
+        grid-auto-columns: minmax(25%,auto);
+        grid-auto-rows: minmax(15%,auto);
+        gap:15px;
+        grid-template-rows:20%;
+    }
+    .title{
+        top: 85%;
+        left: 40%;
+    }
+    .post-menu{
+        margin-top: 44%;
+        margin-left:0%;
+        height:160vh;
+        width: 130%;
     }
 }
