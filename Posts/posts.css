@@ -94,14 +94,13 @@ nav{
     grid-template-rows:20%;
     z-index: 2;
     background-color: rgb(21, 31, 65);
-    height: 130vh;
+    height: 185vh;
     width: 100%;
-    margin-top: 18.2%;
+    margin-top: 25%;
     align-content: flex-end;
     margin-left: 15%;
     font-family: 'Inconsolata';
     color: white;
-
 }
 .menu-bg{
     position: relative;
@@ -115,7 +114,7 @@ nav{
 .card2{
     grid-row-start: 2;
     grid-row-end: 5;
-    visibility: hidden;
+    visibility:hidden;
 }
 .card3{
     visibility: hidden;
@@ -123,17 +122,19 @@ nav{
 .card4{
     grid-row-start: 3;
     grid-row-end:5 ;
-    visibility: hidden;
+    visibility:hidden ;
 }
 .post-card{
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.541);
     position: relative;
     transition: all 0.2s ease-in-out;
-    
+    color: rgb(0, 0, 0);
 }
 .post-card:hover{
-    transform:scale(1.1);
-    box-shadow: 70px 7px 100px cyan;
+    transform: scale(1.2);
+    box-shadow: 70px 7px 100px rgb(0, 174, 255);
+    background-color: black;
+    color: red;
 }
 .title{
     position: absolute;
@@ -163,7 +164,7 @@ nav{
     box-sizing: border-box;
     background-color: rgb(0, 0, 0);
     width: 100%;
-    bottom:-100vh;
+    bottom:-147vh;
     height:245px ;
     color: white;
 }
@@ -257,9 +258,9 @@ nav{
         left: 40%;
     }
     .post-menu{
-        margin-top: 44%;
+        margin-top: 60%;
         margin-left:0%;
-        height:160vh;
+        height:180vh;
         width: 130%;
     }
 }
