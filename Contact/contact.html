@@ -42,7 +42,7 @@
     </nav>
     <div class="slider"></div>
     <div class="form">
-        <form id="form" action="email.php" method="POST">
+        <form id="form" method="GET">
             <label>Name:</label>
             <br>
             <input type="text" name="name" id="name" placeholder="Enter your name">
@@ -55,10 +55,28 @@
             <br>
             <button class="submit" type="submit">Submit</button>
         </form>
+        <script>
+            const form = document.getElementById('form');
+            
+            form.addEventListener('submit',function(e){
+                e.preventDefault();
+
+                const formData = new FormData(this);
+                
+                
+                fetch('data.php',{
+                    method:'post',
+                    body:formData,
+                }).then(function(response){
+                    return response.text();
+                }).then(function(text){
+                    console.log(text);
+                }).catch(function(error){
+                    console.error(error);
+                })
+            });
+        </script>
     </div>
-
-
-
     <script src="contact.js"></script>
 </body>
 </html>
