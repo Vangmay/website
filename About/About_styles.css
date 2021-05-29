@@ -1,5 +1,6 @@
 body{
-    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.589);
+    overflow-x: hidden;
 }
 *{
     padding: 0px;
@@ -34,7 +35,8 @@ nav{
     font-family: 'Work Sans', sans-serif;
     font-size: 23px;
     color: #000000;
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     transition: all 0.3s ease;
 }
 .burger{
@@ -54,120 +56,90 @@ nav{
     background-image:linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
     border-radius: 10px;
     background-size: 200%;
+    padding: 15px;
 }
 .contactbtn:hover{
     background-position: right;
 }
+
 /*Nav styling ends_______*/
-.card{
-    position: absolute;
-    width: 60%;
-    height: 50%;
-    left: 18.5%;
-    top: 25%;
-    background-color: rgba(68, 78, 78, 0.336);
-    border-radius: 25px;
-    z-index: -1;
-}
-.card-details li{
-    z-index: -3;
-    text-decoration: none;
-    list-style: none;
-}
-.card-details{
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-    font-family: 'Work Sans',sans-serif;
-    font-weight: 300;
-    margin-top: 7vh;
-    margin-left:10%;
-}
-.category{
-    background-color: rgba(255, 0, 0, 0);
-    width: 11vh;
-    margin-left: 55vh;
-}
-.details{
-    background-color: rgba(0, 255, 255, 0);
-    width: 50vw;
-}
 .slider{
     position: absolute;
     top: 0%;
     left: 0%;
+    background-size:100%;
     background: linear-gradient(to right, rgba(46,46,205,1) 0%, rgba(92,59,223,1) 19%, rgba(103,62,227,1) 26%, rgba(144,78,235,1) 43%, rgba(112,77,152,1) 59%, rgba(113,80,158,1) 71%, rgba(126,107,211,1) 89%);
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     z-index: -2;
 }
-.skills{
+.card{
+    font-family: "Inconsolata";
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.39);
+    margin-top:10%;
+    margin-left: 20%;
+    width: 65%;
+    height: 50vh;
+    border-radius: 25px;
+}
+.card ul{
     display: flex;
-    position: absolute;
-    top: 100vh;
-    height: 60vh;
+    padding-top: 5%;
+    padding-left: 10px;
+}
+.card-details{
+    list-style: none;
+}
+.main{
+    display: grid;
+    grid-template-columns: 30%;
+    background: linear-gradient(210deg, rgba(0,59,247,1) 0%, rgba(74,110,218,1) 26%, rgba(66,193,200,1) 43%, rgba(115,198,204,1) 59%, rgba(127,224,182,1) 71%, rgba(52,247,245,1) 89%);
     width: 100%;
-    background: linear-gradient(to right, rgba(0,59,247,1) 0%, rgba(74,110,218,1) 26%, rgba(66,193,200,1) 43%, rgba(115,198,204,1) 59%, rgba(127,224,182,1) 71%, rgba(52,247,245,1) 89%);
+    height: 100vh;
+    padding-top: 30px;
+    margin-top: 31.4vh;
+    z-index: 99999;
+    justify-content:start;
 }
-.skill-graph{
-    height: 75%;
-    width: 60%;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.currently-works{
-    height: 60vh;
-    width: 70vh;
-    background-color:rgba(0, 0, 0, 0.281) ;
-    margin-right: 10px;
-    text-align: center;
-    font-family: 'Work Sans',sans-serif;
-    transition: 0.1s all ease-in-out;
-}
-.currently-works:hover{
-    border-radius: 75px;
-}
-
-.scipothesis-logo{
-    background:url('scipothesis.jpeg') ;
-    background-size: contain;
-    background-repeat:no-repeat ;
-    height: 25vh;
-    width: 40vh;
-    margin-left: 22.5vh;
-    left: 132.5vh;
+.graph{
+    position: relative;
+    width: 0%;
+    background-color: #a1c4fd;
+    padding-top: 25%;
 }
 .work-info{
-    height: 250px;
-    width: 40vh;
-    margin-left: 15vh;
-    margin-top: 5vh;
-    color: white;
-    background-color:rgba(255, 0, 0, 0) ;
-    z-index: 100;
+    margin-top: -115%;
+    margin-left: 230%;
     text-align: center;
-    font-size: 30px;
+    height: 60vh;
+    width: 50vh;
+    background-color: rgba(0, 0, 0, 0.219);
 }
-.work-info span{
-    background-color:black ;
+.currently{
+    justify-content: center;
+    font-family: 'Work Sans';
+    padding-top: 14%;
 }
-.work-info span a{
-    color:white ;
+.currently span a{
+    font-family: 'Inconsolata';
     text-decoration: none;
-    transition: all 0.2s ease;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    transition: all 0.2s ease-out;
 }
-.work-info span a:hover{
-    background-color:yellow ;
-    color: black;
+.currently span a:hover{
+    background-color: rgb(0, 0, 0);
+    color:yellow;
 }
-.work-info p{
-    font-family: 'Work Sans',sans-serif;
-    font-size: 20px;
+.work-info h1{
+    font-family: 'Work Sans';
 }
-img{
-    margin-top:5% ;
-    margin-left: 17%;
+.work-info img{
+    height: 50%;
 }
+
+
 
 /*Footer styling*/
 .footer{
@@ -175,7 +147,7 @@ img{
     box-sizing: border-box;
     background-color: rgb(0, 0, 0);
     width: 100%;
-    top: 160vh;
+    top: 200vh;
     height:250px;
     color: rgb(255, 255, 255);
 }
@@ -260,7 +232,7 @@ img{
     }
     
     .footer{ 
-       top: 220vh;
+       top: 250vh;
        height:60vh;
     }
     .footer-info p{
@@ -278,26 +250,13 @@ img{
         margin-top: 23%;
         margin-left: 20%;
     }
-    .skill-graph img{
-        height:40vh;
-        width: 50vh;
-    }
-    .currently-works{
-        width: 85vh;
-        height: 60vh;
-        margin-left: -60%;
-        margin-top: 60vh;
-        background-color: rgb(109, 95, 95);
-    }
-    .scipothesis-logo{
-        margin-left: 25%;
+    .main{
+        height: 150vh;
+        justify-content: space-between;
     }
     .work-info{
-        margin-top:3%;
-        margin-left:15%;
-    }
-    img{
-        margin-top: 23.5%;
+        margin-top:25%;
+        margin-left:35%;
     }
     .footer-info{
         font-family: "Work Sans", sans-serif;

@@ -42,41 +42,30 @@
     </nav>
     <div class="slider"></div>
     <div class="form">
-        <form id="form">
+        <form id="form" name = 'data' method="POST">
             <label>Name:</label>
             <br>
-            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="text" name="Name" id="name" placeholder="Enter your name">
             <br>
             <br>
             <label>Email:</label>
             <br>
-            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <input type="email" name="Email" id="email" placeholder="Enter your email">
             <br>
             <br>
             <button class="submit" type="submit">Submit</button>
         </form>
-        <script>
-            const form = document.getElementById('form');
-            
-            form.addEventListener('submit',function(e){
-                e.preventDefault();
-
-                const formData = new FormData(this);
-                
-                
-                fetch('data.php',{
-                    method:'post',
-                    body:formData,
-                }).then(function(response){
-                    return response.text();
-                }).then(function(text){
-                    console.log(text);
-                }).catch(function(error){
-                    console.error(error);
-                })
-            });
-        </script>
     </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx3cbXs62VzqP1PBIOpFVolbA2Cc6b4X-pAdSj9eNgimzTT140nLSfXhogBg4K8m1c9RA/exec'
+        const form = document.forms['data']
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .catch(error => console.error('Error!', error.message))
+        });
+    </script>
+
     <script src="contact.js"></script>
 </body>
 </html>

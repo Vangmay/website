@@ -76,11 +76,11 @@ nav{
 }
 .animate h2 span{
     color: rgb(255, 255, 255);
-    font-family:'Work Sans',sans-serif;
+    font-family:'Inconsolata';
     font-weight: 300;
 }
 .bio{
-    font-family:'Work Sans',sans-serif;
+    font-family:'Work Sans';
     font-weight: 300;
     position: absolute;
     width: 250px;
