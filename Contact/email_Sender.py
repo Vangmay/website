@@ -44,10 +44,10 @@ for i in range(1,len(values)):
     s.login('Mr.Scott.TheEmailBot@gmail.com', 'scottbot99')
     from email.mime.multipart import MIMEMultipart
     from email.mime.text import MIMEText
-    message = "Hello ,You have been reached out by Vangmay's very handy bot who exists so he can send emails.I am exited to know the reason you wanted to contact me. mailto:vangmay.sachan16@gmail.com"
+    message = "Hello " + names[i-1] + " You have been reached out by Vangmay's very handy bot who exists so he can send emails.I am exited to know the reason you wanted to contact me. mailto:vangmay.sachan16@gmail.com"
     msg = MIMEMultipart()
     msg['From'] = 'mr.scott.theemailbot@gmail.com'
-    msg['To'] = 'vincetheutuber@gmail.com'
+    msg['To'] = emails[i-1]
     msg['Subject'] = "Hello there!"
     msg.attach(MIMEText(message,'plain'))
     s.send_message(msg)
