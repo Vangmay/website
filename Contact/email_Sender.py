@@ -38,23 +38,24 @@ for i in range(1,len(values)):
 
 print (names)
 print (emails)
-#sending emails
+#sending emails_________________________________________________________
 import smtplib
 # set up the SMTP server
-s = smtplib.SMTP(host='smpt.gmail.com', port=465)
+s = smtplib.SMTP(host='smtp.gmail.com', port=587)
+
 s.starttls()
-s.login(MY_ADDRESS, PASSWORD)
+s.login('Mr.Scott.TheEmailBot@gmail.com', 'scottbot99')
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-message = "You have been reached out by Vangmay's very handy bot who exists so he can send emails.I am exited to know the reason you wanted to contact me!"
+message = "Hello ,You have been reached out by Vangmay's very handy bot who exists so he can send emails.I am exited to know the reason you wanted to contact me!"
 msg = MIMEMultipart()
-msg['From'] = MY_ADDRESS
-msg['To'] = email
+msg['From'] = 'mr.scott.theemailbot@gmail.com'
+msg['To'] = 'vincetheutuber@gmail.com'
 msg['Subject'] = "Hello there!"
-msg.attach(message,'plain')
+msg.attach(MIMEText(message,'plain'))
 s.send_message(msg)
 del msg
-#sending emails
+#sending emails_________________________________________________________
 
 #to remove data
 #aoa = [["",""],["",""]]
