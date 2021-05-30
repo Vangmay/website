@@ -8,5 +8,5 @@ burger.addEventListener('click',()=>{
 
 
 submit.addEventListener('click',()=>{
-    submit.innerHTML = 'Thanks!';
+    submit.innerHTML = 'Thanks! Scott has sent you an email';
 })

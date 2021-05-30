@@ -35,29 +35,31 @@ names = []
 for i in range(1,len(values)):
     names.append(values[i][0])
     emails.append(values[i][1])
+    #sending emails_________________________________________________________
+    import smtplib
+    # set up the SMTP server
+    s = smtplib.SMTP(host='smtp.gmail.com', port=587)
 
-print (names)
-print (emails)
-#sending emails_________________________________________________________
-import smtplib
-# set up the SMTP server
-s = smtplib.SMTP(host='smtp.gmail.com', port=587)
-
-s.starttls()
-s.login('Mr.Scott.TheEmailBot@gmail.com', 'scottbot99')
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-message = "Hello ,You have been reached out by Vangmay's very handy bot who exists so he can send emails.I am exited to know the reason you wanted to contact me!"
-msg = MIMEMultipart()
-msg['From'] = 'mr.scott.theemailbot@gmail.com'
-msg['To'] = 'vincetheutuber@gmail.com'
-msg['Subject'] = "Hello there!"
-msg.attach(MIMEText(message,'plain'))
-s.send_message(msg)
-del msg
-#sending emails_________________________________________________________
+    s.starttls()
+    s.login('Mr.Scott.TheEmailBot@gmail.com', 'scottbot99')
+    from email.mime.multipart import MIMEMultipart
+    from email.mime.text import MIMEText
+    message = "Hello ,You have been reached out by Vangmay's very handy bot who exists so he can send emails.I am exited to know the reason you wanted to <a href="">contact me</a>!"
+    msg = MIMEMultipart()
+    msg['From'] = 'mr.scott.theemailbot@gmail.com'
+    msg['To'] = 'vincetheutuber@gmail.com'
+    msg['Subject'] = "Hello there!"
+    msg.attach(MIMEText(message,'plain'))
+    s.send_message(msg)
+    del msg
+    #sending emails_________________________________________________________
 
 #to remove data
-#aoa = [["",""],["",""]]
-#request = sheet.values().update(spreadsheetId=SAMPLE_SPREADSHEET_ID,range="Sheet1!A2", valueInputOption = "USER_ENTERED",body={"values":aoa}).execute()
+blank = [["",""]]
+empty_rows = []
+for i in range(0,len(names)):
+    empty_rows = empty_rows + blank
+request = sheet.values().update(spreadsheetId=SAMPLE_SPREADSHEET_ID,range="Sheet1!A2", valueInputOption = "USER_ENTERED",body={"values":empty_rows}).execute()
 #to remove data
+print("sent emails to " + names)
+print("Here they are " + emails)
