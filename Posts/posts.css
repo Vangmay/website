@@ -1,5 +1,5 @@
 body{
-    background: rgb(153, 142, 142);
+    background: rgb(21, 31, 65);
     overflow-x: hidden;
 }
 *{
@@ -133,7 +133,8 @@ nav{
 .post-card:hover{
     transform: scale(1.2);
     box-shadow: 70px 7px 100px rgb(0, 174, 255);
-    background-color: black;
+    background:url('machine\ learning.png');
+    background-size:cover;
     color: red;
 }
 .title{

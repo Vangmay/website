@@ -35,6 +35,9 @@ h6{
 .blog h1{
     font-family: 'Playfair Display' ;
 }
+.blog h2{
+    font-family: 'Inconsolata';
+}
 .blog h3{
     font-family: 'Inconsolata';
     font-weight: 600;
@@ -49,6 +52,7 @@ img{
     margin: 5px;
 }
 .deep-blue{
+    
     width: 25%;
     float: right;
     margin: 9px;
@@ -71,10 +75,12 @@ img{
 
 }
 .comment{
-    height: 30%;
+    position: relative;
+    z-index: 100;
     width: 80%;
+    height: 50vh;
     margin-left:10% ;
-
+    background: rgb(185, 146, 128);
 }
 /*Navbar styling*/
 nav{
@@ -159,5 +165,9 @@ nav{
     }
     .contactbtn{
         background: rgba(165, 42, 42, 0);
+    }
+    .img-container{
+
+        background-size:200%;
     }
 }

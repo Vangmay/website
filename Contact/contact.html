@@ -57,13 +57,14 @@
         </form>
     </div>
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbx3cbXs62VzqP1PBIOpFVolbA2Cc6b4X-pAdSj9eNgimzTT140nLSfXhogBg4K8m1c9RA/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwli4DreJX0AuZ1FbNequ_Iy-ERJA7SrRljW5l9p3tRcqmb-WG5pWOdJWgvfihtrgyRjw/exec'
         const form = document.forms['data']
+      
         form.addEventListener('submit', e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .catch(error => console.error('Error!', error.message))
-        });
+        })
     </script>
 
     <script src="contact.js"></script>
