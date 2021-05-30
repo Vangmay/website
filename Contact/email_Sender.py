@@ -44,7 +44,7 @@ for i in range(1,len(values)):
     s.login('Mr.Scott.TheEmailBot@gmail.com', 'scottbot99')
     from email.mime.multipart import MIMEMultipart
     from email.mime.text import MIMEText
-    message = "Hello ,You have been reached out by Vangmay's very handy bot who exists so he can send emails.I am exited to know the reason you wanted to <a href="">contact me</a>!"
+    message = "Hello ,You have been reached out by Vangmay's very handy bot who exists so he can send emails.I am exited to know the reason you wanted to contact me. mailto:vangmay.sachan16@gmail.com"
     msg = MIMEMultipart()
     msg['From'] = 'mr.scott.theemailbot@gmail.com'
     msg['To'] = 'vincetheutuber@gmail.com'
@@ -61,5 +61,5 @@ for i in range(0,len(names)):
     empty_rows = empty_rows + blank
 request = sheet.values().update(spreadsheetId=SAMPLE_SPREADSHEET_ID,range="Sheet1!A2", valueInputOption = "USER_ENTERED",body={"values":empty_rows}).execute()
 #to remove data
-print("sent emails to " + names)
-print("Here they are " + emails)
+print( names)
+print( emails)
