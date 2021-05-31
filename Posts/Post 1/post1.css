@@ -1,3 +1,6 @@
+html{
+    overflow-x: hidden;
+}
 body{
     background: #26234d;
     overflow-x:hidden;
@@ -154,14 +157,16 @@ nav{
         z-index: 100;
         flex-direction: column;
         align-items: center;
-        transform: translateX(100%);
+        transform: translateX(0%);
         transition: all 0.4s ease;
+        opacity: 0;
     }
     .burger{
         display: block;
     }
     .nav-active{
         transform: translateX(0%);
+        opacity: 1;
     }
     .contactbtn{
         background: rgba(165, 42, 42, 0);
@@ -169,5 +174,10 @@ nav{
     .img-container{
 
         background-size:200%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .comment{
+        height: 100%;
     }
 }

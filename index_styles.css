@@ -1,5 +1,9 @@
+html{
+    
+}
 body{
     background: rgb(0, 0, 0);
+    overflow-x: hidden;
 }
 *{
     padding: 0px;
@@ -8,7 +12,6 @@ body{
 }
 /*Navbar styling*/
 nav{
-      
     display:flex;
     justify-content: space-around;
     align-items: center;
@@ -96,9 +99,8 @@ nav{
     background: url('Background.jpg');
     background-size:100% ;
     background-position-x: center;
-    background-position-y: center;
+    background-position-y:center;
     background-attachment: fixed;
-    background-repeat:no-repeat ;
     
 }
 .main img{
@@ -178,18 +180,19 @@ nav{
         top: 9vh;
         right: 0%;
         background: rgba(54, 53, 53, 0.589);
-        display: flex;
         z-index: 100;
         flex-direction: column;
         align-items: center;
-        transform: translateX(100%);
+        transform: translateX(0%);
+        display: flex;
         transition: all 0.4s ease;
+        opacity: 0;
     }
     .burger{
         display: block;
     }
     .nav-active{
-        transform: translateX(0%);
+        opacity: 1;
     }
     .contactbtn{
         background: rgba(165, 42, 42, 0);

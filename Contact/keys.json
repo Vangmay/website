@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "email-automation-315110",
+  "private_key_id": "f1e0a03656ceca7160b04c483304ec0519d25c71",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCYZwsSmdNL96FG\n3Wk687e+r9X5dh3Pdq6+U64ihtJBM3NYE+BpEPTPJ9Vx3n6IKE7OPq8+VinsgvSc\nve2JcKPcAcJMJ6LXpkQSAYT2/qPDBgjHfLakD8PC0jh/SfULj0QYKmoXHxtzi9I0\nIHQWsaQHmuWdV2XqMGJGfTJUzmBldTvqKQo+9CZp04/HShLcasiptuOcPF5PtkQg\nXYXctHCmzRSj6EewhOLKxBHTIvRehdvmR692eW1RPtzHePXgmGgZVxiMTvb7Aouy\nhVeRq37rmdAK4HDhOlMM4+yJhI/050mY5HKXyxhuBeRa0kmQy3olFQnMUCrCV39P\n8lYWicZPAgMBAAECggEAOPVN/Jo0D7DRfEg0030R37kc2fqMoqSDI4vnyWyk+QxP\nIAxxsyLMs/15tvCGTsHtzgQ8f6o5SfUZkdkkBVltTET2BntLz5gK2cXqmVtK/hDr\nyA6yvfdMXSwvRFdyN2tIclWrx89u9Yy8t5GngXHL0bHQ/jCTXObPW/PfkzV8bn5B\nsww8HKUrLKqOSBfIcNVxMIKxiMWnPFxktpwyKcHHkrBecmqk0RW3bRvB+UgRvOAN\nTu512OPExk4E0SeCj02BX/kA0Ayaxy8+PQEe+0+DhkvO/hjotiBDDdwGHaYyCQvB\nFPkYgmJNYm8gGgdagq8ByvO1IBUIlKmF3tur75mETQKBgQDTnCD4QRCgHpixPZfp\nMZYtlOYaykZfhw3OXQ+EFKE6vIqVz8aYhOUcDnmtX1Tz1PpOhZFuHQ6lkamXLdTk\nF5IfZDFmRbVBPMFTZX8DT/47HyAO+mQdLVv4MXLgXzaZG/Uk0j+c6THS3k2d1CPr\n6H7KhlC8I7dwOxB0YCxYHRj1ZQKBgQC4X1x4w9zpFz2Tq6B7t7Kkf7OeTYOshJbz\n2lIHLNX0ZLPf5srP5HffFFg9d4fBc3p7jW/5isY4jwASY9ZLCrqTK91gswXFvI+1\nSnHSAJas0z1YYXDTqb25AAWb5rMJNsCnPNHrI8J1kwRqh+DY73nOdWC74ozGfQih\nNpFipeZ7owKBgH+zkvn+WggnLsKXhxuFfznWx96W/00a9av54Sk2Qe5uZbvu/cyB\nNrptyeRkyaG0f7HvTUqEYphshUnksLtNtjMXhfBQVQgfoBOyBqp7FdOb/v7LAKvS\n+dOYE9lv3EUd6BzmfNk2qYi1+2Up5tuxHQMfd41yiHtESbPRbjFmre85AoGAOMHq\nhqbNB9iGtUH9aniXfvptAgucwGwkyDbqT5km2FBz6zZyMuODX2I0898rJIt3JjfZ\nQ7nL4bdr7z1ax8kqvImhYdZarY+pscaUGXDi8Zsp5F5CzHYRmLUABQlVDj4TuqgH\ne1qLz4QNtPnVZxL5rWwG9m/8pFHzaSWSRgsKU/8CgYEAghdpto6vimDLuWcPwBCI\nzrZGAHbOa28tJ2eFWLgBE9HcjmevE2qh8LOoMoVorSCVEN6/cFqLNvje+59Q565e\nPh8JYv9EE1LhIVrpOFs6zrI/Tgv0m2tfFAdGFChHxs+IfrqJMb4D9fk5KoYcLO1o\nqbi4JDmOJDcBmSAdN57HrGc=\n-----END PRIVATE KEY-----\n",
+  "client_email": "very-handy-bot@email-automation-315110.iam.gserviceaccount.com",
+  "client_id": "105061600845041193294",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/very-handy-bot%40email-automation-315110.iam.gserviceaccount.com"
+}
