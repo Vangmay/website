@@ -3,7 +3,7 @@ from googleapiclient.discovery import build
 from google.oauth2 import service_account
 
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
-SERVICE_ACCOUNT_FILE = 'Contact/keys.json'
+SERVICE_ACCOUNT_FILE = 'Contact/keys.json' #i have removed the keys.json from here 
 
 credentials = None
 credentials = service_account.Credentials.from_service_account_file(
@@ -37,7 +37,7 @@ for i in range(1,len(values)):
     s = smtplib.SMTP(host='smtp.gmail.com', port=587)
 
     s.starttls()
-    s.login('Mr.Scott.TheEmailBot@gmail.com', 'scottbot99')
+    s.login("Mr.scott's email", "mr scott's password")
     from email.mime.multipart import MIMEMultipart
     from email.mime.text import MIMEText
     message = "Hello " + names[i-1] + " You have been reached out by Vangmay's very handy bot who exists so he can send emails.I am exited to know the reason you wanted to contact me. mailto:vangmay.sachan16@gmail.com"
