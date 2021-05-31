@@ -11,17 +11,13 @@ credentials = service_account.Credentials.from_service_account_file(
 
 
 
-# If modifying these scopes, delete the file token.json.
-SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
+
 
 # The ID and range of a sample spreadsheet.
 SAMPLE_SPREADSHEET_ID = '1j5L46F8Js0HsQ4-VmHYqg7EMONcT7DLawm5_YXaRxdk'
 
 
-def main():
-    """Shows basic usage of the Sheets API.
-    Prints values from a sample spreadsheet.
-    """
+
 service = build('sheets', 'v4', credentials=credentials)
 
 # Call the Sheets API
@@ -54,12 +50,12 @@ for i in range(1,len(values)):
     del msg
     #sending emails_________________________________________________________
 
-#to remove data
+#to remove data from google spreadsheet_______________________________________________________________________________
 blank = [["",""]]
 empty_rows = []
 for i in range(0,len(names)):
     empty_rows = empty_rows + blank
 request = sheet.values().update(spreadsheetId=SAMPLE_SPREADSHEET_ID,range="Sheet1!A2", valueInputOption = "USER_ENTERED",body={"values":empty_rows}).execute()
-#to remove data
+#to remove data from google spreadsheet_______________________________________________________________________________
 print( names)
 print( emails)
