@@ -302,7 +302,7 @@ nav{
 }
 @media screen and (max-width: 450px) {
     .card{
-        font-size: 83.9%;
+        font-size: 79%;
         margin-left:10%;
         width: 80%;
     }
@@ -314,5 +314,11 @@ nav{
     }
     .card-content{
         
+    }
+    .work-info{
+        font-size: 12px;
+    }
+    .card-details li{
+        margin-top: 0.5%;
     }
 }
