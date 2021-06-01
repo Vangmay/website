@@ -229,6 +229,7 @@ nav{
         transition: all 0.4s ease;
         z-index: 4;
         opacity: 0;
+        visibility: hidden;
     }
     .burger{
         display: block;
@@ -236,6 +237,7 @@ nav{
     .nav-active{
         transform: translateX(0%);
         opacity: 1;
+        visibility: visible;
     }
     .contactbtn{
         background: rgba(165, 42, 42, 0);

@@ -222,6 +222,7 @@ nav{
         transform: translateX(0%);
         transition: all 0.4s ease;
         opacity: 0;
+        visibility: hidden;
     }
     .navlinks li a{
         
@@ -246,6 +247,7 @@ nav{
     .nav-active{
         transform: translateX(0%);
         opacity: 1;
+        visibility: visible;
     }
     .contactbtn{
         background: rgba(165, 42, 42, 0);
@@ -300,8 +302,9 @@ nav{
 }
 @media screen and (max-width: 450px) {
     .card{
-        font-size: 12px;
+        font-size: 83.9%;
         margin-left:10%;
+        width: 80%;
     }
     .graph img{
         height: 60%;

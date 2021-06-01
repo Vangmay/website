@@ -160,6 +160,7 @@ nav{
         transform: translateX(0%);
         transition: all 0.4s ease;
         opacity: 0;
+        visibility: hidden;
     }
     .burger{
         display: block;
@@ -167,6 +168,7 @@ nav{
     .nav-active{
         transform: translateX(0%);
         opacity: 1;
+        visibility: visible;
     }
     .contactbtn{
         background: rgba(165, 42, 42, 0);
@@ -179,5 +181,7 @@ nav{
 @media screen and (max-width: 450px) {
     .comment{
         height: 100%;
+        width: 100%;
+        margin: 0%;
     }
 }
