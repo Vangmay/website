@@ -7,9 +7,34 @@ const bio = document.querySelector('.bio');
 const animate = document.querySelector('.animate');
 const animated_text = document.querySelector('.text-ani');
 const footer = document.querySelector('.footer');
+var x = 0;
 burger.addEventListener('click',()=>{
     nav.classList.toggle('nav-active');
+    x = x + 1
+    if (x%2 != 0) {
+        disableScroll()
+    } else {
+        enableScroll()
+    }
 });
+
+function disableScroll() {
+    // Get the current page scroll position
+    scrollTop = 
+      window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = 
+      window.pageXOffset || document.documentElement.scrollLeft,
+
+        // if any scroll is attempted,
+        // set this to the previous value
+        window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop);
+        };
+
+}
+function enableScroll() {
+    window.onscroll = function() {};
+}
 /*______________________________________________ */
 const tl = new TimelineMax();
 tl.fromTo(main,1,{height:'0%'},{height:'60%',delay:8,ease:Power2.easeInOut})

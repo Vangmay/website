@@ -32,7 +32,7 @@ h6{
     line-height: 30px;
 }
 .slider{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 .blog h1{
     font-family: 'Playfair Display' ;
@@ -53,17 +53,22 @@ img{
     float: left;
     margin: 5px;
 }
+.hello{
+    width: 25%;
+}
+.hell0{
+    width: 21%;
+}
 .deep-blue{
-    
     width: 25%;
     float: right;
     margin: 9px;
 }
 .img-container{
     background: rgb(0, 0, 0);
-    background:url(CPU.png) ;
-    background-size: 145%;
-    background-position:center ;
+    background:url(bitcoin.jpg) ;
+    background-size: 135%;
+    background-position: center;
     background-attachment: fixed;
     width: 100%;
     height: 40vh;

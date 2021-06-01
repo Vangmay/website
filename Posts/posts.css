@@ -114,13 +114,19 @@ nav{
     grid-column-end:3;
 
 }
+.card1:hover{
+    background:url('machine\ learning.png');
+}
 .card2{
     grid-row-start: 2;
     grid-row-end: 5;
     visibility:hidden;
 }
 .card3{
-    visibility: hidden;
+    
+}
+.card3:hover{
+    background: url("bitcoin.jpg");
 }
 .card4{
     grid-row-start: 3;
@@ -136,7 +142,6 @@ nav{
 .post-card:hover{
     transform: scale(1.2);
     box-shadow: 70px 7px 100px rgb(0, 174, 255);
-    background:url('machine\ learning.png');
     background-size:cover;
     color: red;
 }
