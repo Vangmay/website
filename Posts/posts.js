@@ -34,6 +34,7 @@ function enableScroll() {
 cl = new TimelineMax();
 cl.fromTo(slider,1,{y:-900},{y:0,ease:Power2.easeInOut})
 .fromTo(".menu-bg",1,{x:2500},{x:0,ease:Power2.easeInOut})
+.fromTo(nav,0.5,{x:20,opacity:0},{x:0,opacity:1,ease:Power2.easeOut})
 
 gsap.registerPlugin(ScrollTrigger);
 

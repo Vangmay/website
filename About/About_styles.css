@@ -302,9 +302,9 @@ nav{
 }
 @media screen and (max-width: 450px) {
     .card{
-        font-size: 79%;
+        font-size: 75%;
         margin-left:10%;
-        width: 80%;
+        width: 85%;
     }
     .graph img{
         height: 60%;
@@ -312,13 +312,13 @@ nav{
     .work-info{
         margin-left:20%;
     }
-    .card-content{
-        
-    }
     .work-info{
         font-size: 12px;
     }
     .card-details li{
         margin-top: 0.5%;
+    }
+    .card ul{
+        padding-top: 5%;
     }
 }

@@ -276,4 +276,12 @@ nav{
         height:180vh;
         width: 130%;
     }
+    @media screen and (max-width: 450px) {
+        .post-card h1{
+            font-size: 25px;
+        }
+        p{
+            font-size: 13px;
+        }
+    }
 }
