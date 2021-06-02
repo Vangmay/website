@@ -276,6 +276,9 @@ nav{
         top: 85%;
         left: 40%;
     }
+    .post-card:hover{
+        background-size:cover ;
+    }
     .post-menu{
         margin-top: 60%;
         margin-left:0%;

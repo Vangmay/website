@@ -97,7 +97,7 @@ nav{
     position: absolute;
     top:25%;
     background: url('Background.jpg');
-    background-size:100% ;
+    background-size:100%;
     background-position-x: center;
     background-position-y:center;
     background-attachment: fixed;
@@ -179,6 +179,9 @@ nav{
     nav{
         background: rgba(54, 53, 53, 0.589);
     }
+    .main{
+        background-size:120%;
+    }
     .navlinks{
         position: absolute;
         height: 92vh;
@@ -195,7 +198,12 @@ nav{
         opacity: 0;
         visibility: visible;
     }
-
+    ::-webkit-scrollbar{
+        
+    }
+    ::-webkit-scrollbar-thumb{
+        
+    }
     .burger{
         display: block;
     }

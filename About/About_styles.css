@@ -303,8 +303,8 @@ nav{
     .card{
         font-size: 20px;
         border-radius: 0px;
-        width: 44vh;
-    }
+        width: 50vh;
+    }  
 }
 @media screen and (max-width: 450px) {
     .card{
