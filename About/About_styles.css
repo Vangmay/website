@@ -200,7 +200,13 @@ nav{
     width: 250px;
 }
 /*Footer styling ends*/
-
+::-webkit-scrollbar{
+    width: 7px;
+    background:rgb(52, 52, 71);
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgb(231, 124, 237), rgb(238, 156, 215), rgb(242, 186, 193), rgb(243, 214, 169), rgb(241, 242, 142));
+}
 @media screen and (max-width:768px) {
     body{
         overflow-x: hidden;

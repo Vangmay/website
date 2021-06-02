@@ -166,6 +166,12 @@ nav{
   left: 0;
   z-index: 1;
 }
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgb(237, 175, 253), rgb(190, 156, 229), rgb(142, 137, 206), rgb(91, 119, 183), rgb(1, 100, 161));    
+}
 
 /*Footer styling*/
 .footer{

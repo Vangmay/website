@@ -164,7 +164,13 @@ nav{
     width: 250px;
 }
 /*Footer styling ends*/
-
+::-webkit-scrollbar{
+    width: 7px;
+    background:rgb(52, 52, 71);
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom,rgb(174, 10, 122), rgb(196, 86, 135), rgb(215, 136, 147), rgb(232, 183, 159), rgb(247, 229, 170));
+}
 
 @media screen and (max-width:768px) {
     .wrapper{

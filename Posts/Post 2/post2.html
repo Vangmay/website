@@ -68,14 +68,14 @@
             Do you know what the current size of the bitcoin blockchain is? 
             347.86 GB on May 31 2021
             The bitcoin blockchain was served to public in 2008, since then it has expanded
-            To 347.86 GBs in a span of 13 years 
+            To 347.86 GBs in a span of 13 years. 
             
             After an entry has been recorded on the ledger it cannot be changed.The blockchain is totally immutable. This brings the question, why can’t I give myself plenty of bitcoins or forge them easily? That is because of the complex verification that is used before a transaction is recorded on a blockchain. 
             </p>
         <h2>verification</h2>
         <p>The verification part of these transactions is what is being performed by miners. 
             Miners connect to this network and run special softwares that run by grouping the recent transactions into blocks which are only accepted by the rest of the network if they are hashed correctly, otherwise the rest of the network may see it as an invalid entry and prevent it from being recorded into the blockchain hence: “The transaction never happened”
-            In the case when the block does get accepted into the block-chain,the network generates a bitcoin as a reward that goes into the miners wallet
+            In the case when the block does get accepted into the block-chain,the network generates a bitcoin as a reward that goes into the miner's wallet.
         </p>
         <h2>Hashing</h2>
         <p>Here we come to the interesting part, hashing is the process which has made the whole blockchain system intact, robust and tamper proof. 
@@ -85,8 +85,11 @@
             “51279E103DBFFCCB8C5A33CE971DF867E9D00A
             7824F3565B26F3B741E40D4”
             
-            This is an example of hashed data
-            What is inside the double quotes? You will never know
+            This collection of random digits and alphabets that you definately did not read is an example of hashed data.
+            What is inside the double quotes? You will never know.
+            
+            
+            
             
             There are many algorithms which are used to do this, most blockchains use sha256. 
             This is because sha256 is an algorithm that will always generate a 64 digit hash. 
@@ -96,7 +99,7 @@
         <img class = 'hello'src="Hello.PNG" alt="deep blue" srcset="">
         <img class = 'hell0'src="hell0.PNG" alt="deep blue" srcset="">
         <h2>How does this hashing make the blockchain secure?</h2>
-        <p>Like i told before, transaction records  are hashed in blocks, after which they are recorded in the blockchain. These blocks are stored in a specific sequence, each block has 2 different data one is the data of the transaction block, the second is what we call a “Hash pointer”. A hash pointer is nothing complex but just the hash of the block behind it. So if Block-A and Block-B are in a chain, Block B will contain the hash of the transactions and also the hash of A’s transactions. Why this? Well this is because the hash pointer indicates the position where block B is meant to be placed.
+        <p>Like i told before, transaction records  are hashed in blocks, after which they are recorded in the blockchain. These blocks are stored in a specific sequence, each block has 2 different data-sets, one is the data of the transaction block, the second is what we call a “Hash pointer”. A hash pointer is nothing complex but just the hash of the block behind it. So if Block-A and Block-B are in a chain, Block B will contain the hash of the transactions and also the hash of A’s transactions. Why this? Well this is because the hash pointer indicates the position where block B is meant to be placed.
 
             Let’s say i try to to alter details of a bitcoin transaction between me and a person(Scott),
             If the original transaction said that 
@@ -104,7 +107,7 @@
              and i try to alter it to 
             “Scott gives me 3 bitcoins” 
             Now the hash in block 1 gets changed completely, so which means that the 
-            “Hash pointer” which will be in the block 2 will not match. This disable block 1 and block 2 from attaching in the blockchain, so now where will my forged block 1 go in the blockchain?
+            “Hash pointer” which will be in the block 2 will not match. This disables block 1 and block 2 from attaching in the blockchain, so now where will my forged block 1 go in the blockchain?
             The answer is no where. 
         </p>
     </div>
@@ -124,7 +127,7 @@
         
         (function() { // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');
-        s.src = 'https://portfolio-site-2.disqus.com/embed.js';
+        s.src = 'https://portfolio-site-3.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
         })();

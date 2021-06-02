@@ -85,10 +85,11 @@ img{
     background: rgb(185, 146, 128);
 }
 ::-webkit-scrollbar{
-    width: 12px;
+    width: 7px;
 }
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(177deg, rgba(70,0,247,1) 0%, rgba(163,74,218,1) 26%, rgba(199,66,200,1) 43%, rgba(204,115,132,1) 59%, rgba(224,127,127,1) 71%, rgba(247,52,197,1) 89%);
+    background: rgb(0,229,247);
+    background: radial-gradient(circle, rgba(0,229,247,1) 0%, rgba(0,255,171,1) 26%, rgba(0,255,252,1) 43%, rgba(0,202,255,1) 59%, rgba(0,164,255,1) 71%, rgba(0,121,255,1) 89%);
 }
 /*Navbar styling*/
 nav{

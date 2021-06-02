@@ -129,6 +129,13 @@ nav{
 }
 .project3{
 }
+::-webkit-scrollbar{
+    width: 7px;
+    background:rgb(52, 52, 71);
+}
+::-webkit-scrollbar-thumb{
+    background: radial-gradient(rgb(236, 222, 234), rgb(193, 190, 215), rgb(151, 160, 196), rgb(106, 130, 178), rgb(55, 102, 159));
+}
 /*Footer styling*/
 .footer{
     position: absolute;
