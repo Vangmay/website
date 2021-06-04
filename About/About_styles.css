@@ -306,7 +306,10 @@ nav{
         width: 50vh;
     }  
 }
-@media screen and (max-width: 450px) {
+
+
+
+@media screen and (max-width: 480px) {
     .card{
         font-size: 75%;
         margin-left:10%;
@@ -327,4 +330,110 @@ nav{
     .card ul{
         padding-top: 5%;
     }
+}
+
+
+
+@media screen and (width:1024px) {
+    body{
+        overflow-x: hidden;
+    }
+    nav{
+        background: rgba(54, 53, 53, 0.589);
+    }
+    .navlinks{
+        position: absolute;
+        height: 92vh;
+        width: 42vh;
+        top: 9vh;
+        right: 0%;
+        background: rgba(54, 53, 53, 0.589);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(0%);
+        transition: all 0.4s ease;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .navlinks li a{
+        font-size:40px ;
+    }
+    .category{
+        background-color: rgba(0, 255, 255, 0);
+        width: 7vh;
+        margin-left: 7vh;
+        margin-top: -17%;
+    }
+    .details{
+        width:20vh;
+        margin-left: 1.5vh;
+        margin-top: -10%;
+        
+    }
+    .burger{
+        display: block;
+    }
+    .nav-active{
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+    .contactbtn{
+        background: rgba(165, 42, 42, 0);
+    }
+    
+    .footer{ 
+       top: 250vh;
+       height:60vh;
+    }
+    .footer-info p{
+        font-size: 20px;
+        text-align:left;
+    }
+    .footer-text{
+        font-size: 40px;
+    }
+    .skills{
+        display: block;
+    }
+    .skills{
+        display: flex;
+        flex-direction: row;
+    }
+    .card-details{
+        margin-top: 20%;
+        margin-left: -15%;
+    }
+    .details{
+        padding-left:40px;
+        font-size: 100%;
+    }
+    .main{
+        height: 150vh;
+        justify-content: space-between;
+    }
+    .category{
+        font-size: 100%;
+    }
+    .work-info{
+        margin-top:50%;
+        margin-left:50%;
+        font-size: 25px;
+    }
+    .graph img{
+        height: 100%;
+    }
+    .footer-info{
+        font-family: "Work Sans", sans-serif;
+        position: absolute;
+        left: 60%;
+        top: 6vh;
+        align-content: center;
+    }
+    .card{
+        font-size: 20px;
+        border-radius: 0px;
+        width: 50vh;
+    }  
 }
