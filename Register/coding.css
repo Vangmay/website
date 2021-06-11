@@ -41,6 +41,7 @@ h1{
     font-size: 25px;
     width: 70%;
     height:4vh;
+    padding:15px;
     border-radius: 40px;
     border: 2px solid green;
     background: transparent;
