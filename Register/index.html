@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    </style>
+    <link rel="stylesheet" href="./coding.css">
+    <script src="./coding.js"></script>
+</head>
+<body>
+    <div class="slider">
+        <div class="form">
+            <h1>Can you hack it?</h1>
+            <form method="POST" action="" name="register">
+                <br>
+                <br>
+                <input type="text" name="Name" id='entry' placeholder=" Name">
+                <br>
+                <br>
+                <input type="Email" name="Email" id="entry" placeholder=" Email">
+                <br>
+                <br>
+                <Button class="register">Register</Button>
+            </form>
+        </div>
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwDT_9kCuPo_DBNWchwe2gOEBben2NT4uh3wRQQ5WdbLssdz5pm2zp9Wo1aAlqvffDT/exec'
+        const form = document.forms["register"]
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    
+</body>
+</html>
