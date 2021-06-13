@@ -28,7 +28,12 @@
                 <input type="text" name="Name" id='entry' placeholder="Name">
                 <br>
                 <br>
+                <input type="text" name="Class" id="entry" placeholder="Class">
+                <br>
+                <br>
+                
                 <input type="Email" name="Email" id="entry" placeholder="Email">
+
                 <br>
                 <br>
                 <button type="submit" class="register">Register</button>
@@ -42,7 +47,7 @@
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .catch(error => console.error('Error!', error.message)) 
-            location.replace("instructions.html");
+            location.replace("./instruction.html");
         })
     </script>
     

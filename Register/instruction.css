@@ -1,0 +1,32 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    Background: #141729;
+}
+
+.container{
+    height: 100vh;
+    Background: #141729;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.elfsight-app-8614bc83-c54a-4016-917f-a73b56708f77{
+    transform: scale(0.9);
+    color: #06CB5D;
+    text-align: center;
+    height: 70%;
+    width: 40%;
+    align-items: center;
+    align-content: center;
+    font-family: "Inconsolata";
+    position: absolute;
+    top: -7%;
+}
