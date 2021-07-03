@@ -13,7 +13,7 @@ function init() {
         //dictDefaultMessage:'<span class="span"><h4 class="uploadBTN">Upload</h4></span>' ,
         autoProcessQueue: false,
         //change the previewTemplate to use Bootstrap progress bars
-        previewTemplate:'<div class="dz-preview dz-file-preview"> <div class="dz-details"> <div class="dz-filename"><span data-dz-name></span></div> <div class="dz-size" data-dz-size></div> </div> </div>'
+        previewTemplate:'<div class="dz-preview dz-file-preview"><div class="dz-details"><div class="dz-filename"><span data-dz-name></span></div></div></div>'
     });
 
     dz.on('addedfile',function(){
@@ -24,7 +24,7 @@ function init() {
     dz.on('complete',function(file){
         let imageData = file.dataURL;
 
-        var url = 'https://cat-breed-classifier.herokuapp.com/classify_cat';
+        var url = 'http://127.0.0.1:5000/classify_cat';
 
         $.post(url, {
             image_data: imageData
