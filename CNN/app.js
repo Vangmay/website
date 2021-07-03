@@ -24,7 +24,7 @@ function init() {
     dz.on('complete',function(file){
         let imageData = file.dataURL;
 
-        var url = 'http://127.0.0.1:5000/classify_cat';
+        var url = 'https://cat-breed-classifier.herokuapp.com/classify_cat';
 
         $.post(url, {
             image_data: imageData
