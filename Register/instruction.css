@@ -19,14 +19,13 @@ html{
 
 
 .elfsight-app-511bba3d-b4bd-40b7-86f7-8f69b1d3fb67{
-    
     color: #06CB5D;
     text-align: center;
-    height: 70%;
+    height: 100%;
     width: 40%;
     align-items: center;
     align-content: center;
     font-family: "Inconsolata";
     position: absolute;
-    top: -7%;
+    top: -10%;
 }
