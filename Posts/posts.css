@@ -113,7 +113,7 @@ nav{
 .card1{
     grid-column-start: 1;
     grid-column-end:3;
-
+    background-position: center;
 }
 .card1:hover{
     background:url('machine\ learning.png');
@@ -121,10 +121,16 @@ nav{
 .card2{
     grid-row-start: 2;
     grid-row-end: 5;
-    visibility:hidden;
+    height: 55%;
+    background-position: center;
 }
+.card2:hover{
+    background:url('./Post 3/neural.png') ;
+    background-position:center ;
+}
+
 .card3{
-    
+    background-position: center;
 }
 .card3:hover{
     background: url("bitcoin.jpg");
@@ -132,7 +138,7 @@ nav{
 .card4{
     grid-row-start: 3;
     grid-row-end:5 ;
-    visibility:hidden ;
+    visibility: hidden;
 }
 .post-card{
     background-color: rgba(255, 0, 0, 0.541);
@@ -339,7 +345,7 @@ input:focus{
 
 @media screen and (max-width: 450px) {
     .post-card h1{
-        font-size: 25px;
+        font-size: 17px;
     }
     p{
         font-size: 13px;
