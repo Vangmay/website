@@ -93,7 +93,9 @@ img{
     width: 7px;
 }
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(177deg, rgba(70,0,247,1) 0%, rgba(163,74,218,1) 26%, rgba(199,66,200,1) 43%, rgba(204,115,132,1) 59%, rgba(224,127,127,1) 71%, rgba(247,52,197,1) 89%);
+    background: rgb(208,33,242);
+    background: linear-gradient(0deg, rgba(208,33,242,1) 2%, rgba(253,97,45,1) 58%, rgba(195,34,56,1) 100%);
+    border-radius: 40px;
 }
 /*Navbar styling*/
 nav{
