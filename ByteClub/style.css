@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 *{
     padding: 0px;
     margin: 0px;
@@ -41,14 +42,27 @@ h2{
     color: #a3d49d;
 }
 
+input, textarea{
+    color: #ececec;
+}
+
 .submit{
     color:black;
-    background-color: #fabfb8;
+    background-color: #fc5296;
+    background-image: linear-gradient(315deg, #fc5296 0%, #f67062 74%); 
     border: none;
     width: 300px;
     height: 50px;
     border-radius: 40px;
     cursor: pointer;
+    font-family: 'Fira Code', monospace;
+    font-size: 30px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: all 0.3s ease;
+}
+
+.submit:hover{
+    box-shadow: none;
 }
 
 .box{
@@ -69,3 +83,125 @@ h2{
     resize: none;
     overflow: hidden;
 }
+
+.radio {
+    --size: 25px;
+    min-width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    margin: 0 10px;
+    position: relative;
+    padding-left: var(--size);
+  }
+  
+  ..radio input {
+    display: none;
+  }
+  
+  
+  ..radio.left {
+    padding-left: 0;
+    padding-right: var(--size);
+  }
+  
+  
+  ..radio .label {
+    margin-left: 5px;
+  }
+  
+  ..radio.left .label {
+    margin: 0 5px;
+  }
+  
+  ..radio[aria-label]::after {
+    content: attr(aria-label);
+    display: inline-block;
+    margin-left: 5px;
+  }
+  
+  
+  ..radio .checkmark {
+    --gap: 3px;
+    --border: 2px;
+    --check-color: #ff5722;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: inline-block;
+    transition: opacity 0.3s ease;
+    
+    border: var(--border) solid #444;
+    padding: var(--gap);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  ..radio.left .checkmark {
+    left: auto;
+    right: 0;
+  }
+  
+  ..radio input:checked ~ .checkmark {
+  
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-image: radial-gradient(
+      circle at center, 
+      var(--check-color) 
+      calc((var(--size) - (var(--border) * 2) - (var(--gap) * 2)) / 2), 
+      rgba(255, 255, 255, 0) 0);
+  }
+  
+  @media screen and (max-width: 1285px) {
+
+
+
+    .form{
+        width: 100vw;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .box{
+        width: 80vw;
+    }
+
+    input{
+        width: 100vw;
+    }
+}
+  @media screen and (max-width: 900px) {
+    .form{
+        width: 100vw;
+    }
+
+    input{
+        width: 100vw;
+    }
+}
+  
+  @media screen and (max-width: 500px) {
+    .form{
+        width: 100vw;
+    }
+
+    input{
+        width: 100vw;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .form{
+        width: 100vw;
+    }
+
+    input{
+        width: 100vw;
+    }
+  }
+  
