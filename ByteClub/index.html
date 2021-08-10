@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Register</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Inconsolata:wght@200;300&display=swap');
+    </style>
+
+
+
+</head>
+<body>
+    <div class="content">
+        <div class="form">
+            <h2><span class="text-ani"></span></h2>
+            <br>
+            <br>
+            <form id="form" name = 'data' method="POST">
+                
+                <br>
+                <input type="text" name="Name" id="name" placeholder="Name" class = 'box'>
+                <br>
+                <br>
+                <input class = 'box' type="numeric" name = "Class" placeholder="Class">
+                <br>
+                <br>
+                <input type="email" class = 'box' name="Email" id="email" placeholder="Email">
+                <br>
+                <br>
+                <br>
+                <h1>What are your interests?</h1>
+                <br>
+                <textarea name="Interests" id="Interests" class = "box" placeholder="We would love to know"></textarea>
+                <br>
+                
+                <br>
+                <h1>What is your programming skill level?</h1>
+                <br>
+                <Label>Programming god</Label>
+                <input type="radio" name = "Skill" value = "God"  class = "radio" id = "radio">
+                <br>
+
+                <Label>Good enough</Label>
+                <input type="radio" name = "Skill" class = "radio"  value = "Good enough" id = "radio">
+                <br>
+                
+                <Label>Intermediate</Label>
+                <input type="radio" name = "Skill" class = "radio"  value = "intermediate" id = "radio">
+                <br>
+                
+                <Label>Beginner</Label>
+                <input type="radio" class = "radio"  name = "Skill" value = "Beginner" id = "radio">
+                <br>
+                
+                <Label>Never coded but I am interested</Label>
+                <input type="radio" class = "radio" name = "Skill" value = "Never coded"  id = "radio">
+                <br>
+                
+                <br>
+                <button class="submit" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxyIJ4pZyn7DV7UUW9X1vezRyCdytohiJ24Xbd1iCjpyi1FqmMt0YzzZqFvtZoDGRvC/exec'
+        const form = document.forms['data']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    
+    
+    
+    <script src="../typed(NOT BY ME).js"></script>
+    <script>
+        var typed = new Typed('.text-ani', {
+            strings:[
+                'Welcome',
+                'to',
+                'Byte Club',
+                'Join us',
+                'Byte club, the best club in town'
+            ],
+            typeSpeed:50,
+            backSpeed:50,
+            showCursor:true,
+            autoInsertCss:true
+        });
+    </script>
+    <script src="./byte.js"></script>
+</body>
+</html>
